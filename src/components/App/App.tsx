@@ -29,7 +29,7 @@ function App() {
   };
 
   const totalVotes: number = votes.good + votes.neutral + votes.bad;
-  const positiveRate: string =
+  const positiveRate =
     totalVotes > 0 ? ((votes.good / totalVotes) * 100).toFixed(2) : "0";
 
   return (
