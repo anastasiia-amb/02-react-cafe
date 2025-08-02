@@ -30,7 +30,7 @@ function App() {
 
   const totalVotes: number = votes.good + votes.neutral + votes.bad;
   const positiveRate =
-    totalVotes > 0 ? ((votes.good / totalVotes) * 100).toFixed(2) : "0";
+    totalVotes > 0 ? Number(((votes.good / totalVotes) * 100).toFixed(2)) : 0;
 
   return (
     <div className={css.app}>
